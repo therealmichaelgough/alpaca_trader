@@ -1,0 +1,29 @@
+{
+    "alpaca": {
+        "api_key": "AKMPWM7RKXTDQ4FPASIZ",
+        "secret_key": "sf59i6LbjYWUwUQUwKz66DqmHeFlTQqBOYFxFg8w",
+        "paper": true
+    },
+    "aws": {
+        "access_key": "YOUR_AWS_ACCESS_KEY",
+        "secret_key": "YOUR_AWS_SECRET_KEY",
+        "region": "us-east-1"
+    },
+    "s3": {
+        "bucket": "mdgough12-trading-strategies",
+        "strategy_key": "current_strategy.json"
+    },
+    "buffer_size": 30,
+    "market_data_interval": 60,
+    "strategy_update_interval": 300,
+    "signal_processing_interval": 5,
+    "min_candles_required": 5,
+    "run_when_market_closed": false,
+    "trade_when_market_closed": false,
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "file": "logs/trading_engine.log"
+    },
+    "strategy_file": "strategies/test_strat.json"
+}

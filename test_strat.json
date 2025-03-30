@@ -1,0 +1,46 @@
+{
+    "id": "momentum_strategy_v1",
+    "version": "1.0.0",
+    "symbols": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+    "parameters": {
+        "rsi_period": 14,
+        "rsi_overbought": 70,
+        "rsi_oversold": 30,
+        "volume_threshold": 1.5,
+        "ma_fast": 5,
+        "ma_slow": 20
+    },
+    "signals": [
+        {
+            "name": "rsi_oversold_buy",
+            "condition": "rsi < parameters.rsi_oversold and volume > sma(volume, 20) * parameters.volume_threshold",
+            "action": "BUY",
+            "sizing": 0.1
+        },
+        {
+            "name": "rsi_overbought_sell",
+            "condition": "rsi > parameters.rsi_overbought",
+            "action": "SELL",
+            "sizing": 1.0
+        },
+        {
+            "name": "ma_cross_buy",
+            "condition": "crossover(sma(close, parameters.ma_fast), sma(close, parameters.ma_slow))",
+            "action": "BUY",
+            "sizing": 0.2
+        },
+        {
+            "name": "ma_cross_sell",
+            "condition": "crossunder(sma(close, parameters.ma_fast), sma(close, parameters.ma_slow))",
+            "action": "SELL",
+            "sizing": 1.0
+        }
+    ],
+    "risk_controls": {
+        "max_position_size": 0.2,
+        "stop_loss": 0.03,
+        "take_profit": 0.08,
+        "max_open_positions": 3,
+        "max_daily_loss": 0.05
+    }
+}

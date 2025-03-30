@@ -1,0 +1,19 @@
+2025-03-22 19:07:53,346 - root - INFO - Loading strategy from S3 bucket: trading-strategies
+2025-03-22 19:07:53,596 - root - ERROR - Error loading strategy: An error occurred (InvalidAccessKeyId) when calling the GetObject operation: The AWS Access Key Id you provided does not exist in our records.
+2025-03-22 19:07:53,597 - root - INFO - Market data worker started
+2025-03-22 19:07:53,597 - root - INFO - Strategy update worker started
+2025-03-22 19:07:53,597 - root - INFO - Loading strategy from S3 bucket: trading-strategies
+2025-03-22 19:07:53,598 - root - INFO - Signal processing worker started
+2025-03-22 19:07:53,599 - root - INFO - Trading engine started
+2025-03-22 19:07:53,664 - root - ERROR - Error loading strategy: An error occurred (InvalidAccessKeyId) when calling the GetObject operation: The AWS Access Key Id you provided does not exist in our records.
+2025-03-22 19:07:53,881 - root - ERROR - Error in market data worker: {"code":40110000,"message":"request is not authorized"}
+2025-03-22 19:07:53,882 - root - ERROR - Error in signal processing worker: {"code":40110000,"message":"request is not authorized"}
+2025-03-22 19:08:03,952 - root - ERROR - Error in signal processing worker: {"code":40110000,"message":"request is not authorized"}
+2025-03-22 19:08:04,010 - root - ERROR - Error in market data worker: {"code":40110000,"message":"request is not authorized"}
+2025-03-22 19:08:14,021 - root - ERROR - Error in signal processing worker: {"code":40110000,"message":"request is not authorized"}
+2025-03-22 19:08:14,075 - root - ERROR - Error in market data worker: {"code":40110000,"message":"request is not authorized"}
+2025-03-22 19:08:19,905 - root - INFO - Stopping trading engine...
+2025-03-22 19:08:24,026 - root - INFO - Signal processing worker stopped
+2025-03-22 19:08:24,078 - root - INFO - Market data worker stopped
+2025-03-22 19:08:29,084 - root - INFO - Trading engine stopped
+2025-03-22 19:23:57,660 - root - INFO - Strategy update worker stopped
